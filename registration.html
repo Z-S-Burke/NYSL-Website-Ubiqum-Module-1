@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form </title>
+    
+    <link rel="stylesheet" href="assets/stylesheet/nysl_3.css">
+</head>
+
+<body>
+    <header> 
+        <nav>
+            <ul> 
+                <a href="index.html"> Home </a> 
+                <a href="about.html"> About </a>
+                <a href="rules.html"> Rules </a>
+                <a href="game_info.html"> Game Info </a>
+                <a href="registration.html" class ="current"> Register </a>
+                <a href="contact.html"> Contact </a>                
+            </ul>
+        </nav>
+        
+        <div class="splash"> </div>
+        <img class="logo" src="assets/images/nysl_logo.png" alt="Logo">
+        
+        <div>
+            <h1 class="title_text"> 
+                Northern Youth Soccer League 
+            </h1> 
+            <h2 class="page_title"> 
+                About 
+            </h2>
+        </div>    
+        
+
+    </header>
+    
+    <section class="text_container">
+        <h2 class="registration_header"> NYSL Registration Form: Spring 2019 </h2>
+        <form action="show_data.html" id="registration_button">
+            <div class="registration_text">
+                <label> Player's first name: </label> 
+                    <input class="form_text_bar" 
+                           pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" type="text" name="firstname" placeholder="Vorname..." required> 
+                <label> Player's last name: </label>
+                    <input class="form_text_bar" pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" type="text" name="lastname" placeholder="Nachname..." required>
+            </div> 
+            <div class="registration_text">
+                <label> Street Address: </label>
+                    <input class="form_text_bar" type="text" name="street" placeholder="Straße..." required>
+            </div>
+            <div class="registration_text"> 
+                <label> City: </label>
+                    <input class="form_text_bar" pattern="^[A-Za-z]+$" type="text" name="city" placeholder="Stadt..." required>
+                <label> Zip Code: </label>
+                    <input class="form_text_bar" pattern="[0-9]{5}" type="text" name="zipcode" maxlength="5" placeholder="PLZ..." required>
+            </div>
+            <div class="registration_text">
+                <div>
+                <label> Date of Birth &#40;mm/dd/yyyy&#41;: </label>
+                    <input type="date" name="birthday" required>
+                </div>
+                <div>
+                    <label> Gender: </label> 
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                </div>
+            </div>
+            <div class="registration_text">
+                <div>
+                    <label> Grade: </label>
+                </div>
+                    Kindergarten: <input type="radio" name="grade" value="Kindergarten"> 
+                    1st <input type="radio" name="grade" value="1st"> 
+                    2nd <input type="radio" name="grade" value="2nd">
+                    3rd <input type="radio" name="grade" value="3rd"> 
+                    4th <input type="radio" name="grade" value="4th">
+                    5th <input type="radio" name="grade" value="5th">
+            </div>
+            <div class="registration_text">
+                <label> Parent/Guardian: </label> 
+                    <input class="form_text_bar" type="text" name="parent" placeholder="vollständiger Name..." required>
+            </div> 
+            <div class="registration_text">
+                <label> Contact Phone: </label> 
+                    <input class="form_text_bar" type="tel" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" maxlength="12" placeholder="123-456-7890" required> 
+                <label> Contact Email: </label> 
+                    <input class="form_text_bar" type="email" id="emailField" name="email" placeholder="john@doe.com" required>
+            </div> 
+            <h4> Which elementary schools do you live near? </h4>
+            <div class="registration_drop">
+                <label class="form_drop_label"> First closest school: </label>
+                <select class="form_drop" name="nearest_school"> 
+                    <option value="Katzemaier"> AJ Katzemaier </option>
+                    <option value="Marjorie"> Marjorie P Hart </option>
+                    <option value="Greenbay"> Greenbay </option> 
+                    <option value="North"> North Elementary </option> 
+                    <option value="South"> South Elementary </option>
+                    <option value="Yeager"> Howard A Yeager </option>
+                </select> 
+                <label> Second closest school: </label> 
+                <select class="form_drop" name="second_closest"> 
+                    <option value="Yeager"> Howard A Yeager </option>
+                    <option value="South"> South Elementary </option>
+                    <option value="North"> North Elementary </option> 
+                    <option value="Greenbay"> Greenbay </option> 
+                    <option value="Marjorie"> Marjorie P Hart </option>  
+                    <option value="Katzemaier"> AJ Katzemaier </option>              
+                </select>
+            </div>
+            <div class="registration_check">
+                <div class="form_check">
+                    <h4 class="registration_mast"> Which position&#40;s&#41; do you normally play? &#40;Check all that apply&#41; </h4> 
+                    <label> Forward  
+                        <input class="form_check_box" type="checkbox" name="normal_position" value="forward"> 
+                    </label>
+                    <label> Midfield 
+                        <input class="form_check_box" type="checkbox" name="normal_position" value="midfield"> 
+                    </label>
+                    <label> Defense 
+                        <input class="form_check_box" type="checkbox" name="normal_position" value="defense"> 
+                    </label>
+                    <label> Goalkeeper 
+                        <input class="form_check_box" type="checkbox" name="normal_position" value="goalkeeper"> 
+                    </label> 
+                </div>
+                <div class="form_check">                    
+                    <h4 class="registration_mast"> Which position&#40;s&#41; do you want to play? &#40;Check all that apply&#41; </h4>
+                    <label> Forward 
+                        <input class="form_check_box" type="checkbox" name="wants_position" value="forward"> 
+                    </label>
+                    <label> Midfield 
+                        <input class="form_check_box" type="checkbox" name="wants_position" value="midfield"> 
+                    </label>
+                    <label> Defense 
+                        <input class="form_check_box" type="checkbox" name="wants_position" value="defense"> 
+                    </label>
+                    <label> Goalkeeper 
+                        <input class="form_check_box" type="checkbox" name="wants_position" value="goalkeeper"> 
+                    </label>
+                </div>
+            </div>
+            <div class="own_uniform">
+                <label class="own_uniform"> Already have a uniform? 
+                    <input type="checkbox" name="own_uniform"> 
+                </label>
+            </div>
+            <br> 
+            <div class="registration_drop">
+                <label> Jersey Size: </label>
+                <select class="form_drop" name="jersey_size" required> 
+                    <option value="jersey_youth_small"> Youth Small </option>
+                    <option value="jersey_youth_medium"> Youth Medium </option>
+                    <option value="jersey_youth_large"> Youth Large </option>
+                    <option value="jersey_small"> Small </option>
+                    <option value="jersey_medium"> Medium </option>
+                    <option value="jersey_large"> Large </option>
+                    <option value="jersey_extra_large"> Extra Large </option>
+                </select>
+                <label> Shorts Size: </label>
+                <select class="form_drop" name="shorts_size" required> 
+                    <option value="shorts_youth_small"> Youth Small </option>
+                    <option value="shorts_youth_medium"> Youth Medium </option>
+                    <option value="shorts_youth_large"> Youth Large </option>
+                    <option value="shorts_small"> Small </option>
+                    <option value="shorts_medium"> Medium </option>
+                    <option value="shorts_large"> Large </option>
+                    <option value="shorts_extra_large"> Extra Large </option>
+                </select>
+            </div>
+            <h5> Permission to Play: </h5>
+            <h6> I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League &#40;NYSL&#41;. In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation. By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms. </h6>
+            <div class="registration_text">
+                <label> Parent/Guardian Signature: </label> 
+                    <input class="form_text_bar" pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" type="text" name="parent_signature" placeholder="Unterschrift..." required> 
+                <label> Date: </label>
+                    <input type="date" name="date_signed" required>
+            </div> 
+            <div class="registration_text closing_text">
+                <button class="submit_button"> Submit </button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

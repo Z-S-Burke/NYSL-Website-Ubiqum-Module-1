@@ -1,0 +1,411 @@
+/*
+=========
+  logo
+=========
+*/
+
+.logo {
+    height: 250px;
+    width: 250px;
+    z-index: 800;
+    top: 2%;
+    left: 5%;
+    position: fixed;
+}
+
+
+/*
+=========
+  page title text 
+=========
+*/
+.page_title {
+    font-size: 30px;
+    font-style: italic;
+    font-family: sans-serif;
+    border-left-style: double;
+    width: 55%;
+    margin-left: 25%;
+    padding-left: 1%;
+}
+
+/*
+=========
+  title text appearance
+=========
+*/
+.title_text { 
+    color: black; 
+    font-size: 40px;
+    font-family: sans-serif;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    width: 65%;
+    padding-left: 1%;
+    margin-left: 25%;
+    text-transform: uppercase;
+}
+
+/*
+=========
+  nav menu position
+=========
+*/
+nav {
+    position: fixed;
+    margin-left: 3%;
+    top: 270px;
+    z-index: 500;
+    padding: 10px 24px;
+}
+
+/*
+=========
+  nav menu style
+=========
+*/
+
+nav a {
+    background-color: orangered;
+    border: none;
+    color: white;
+    opacity: .5;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;    
+    font-size: 16px;
+}
+
+/*
+=========
+  nav menu list style
+=========
+*/
+nav ul a{
+    width: 100px;
+    margin-top: 20px;
+    border-left-style: groove;
+    border-color: black;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body {
+    margin-bottom: 10%;
+}
+/*
+=========
+  nav menu feedback 
+=========
+*/
+nav a:hover {
+    background-color: orangered;
+    opacity: 1;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* sets the button background to black for the current page */ 
+a.current:visited {
+    color: white;
+    background-color: black;
+    opacity: 1;
+}
+
+/* Formatting for tables */ 
+
+table {
+    width: 100%;
+}
+
+th, td {
+    border-style: double;
+    border-width: thin;
+}
+
+/*makes it so that every even tr-child of a table will have a light grey background color*/
+tr:nth-child(even) {
+    background-color: #dddd;
+}
+
+.game_locations {
+    text-align: left;
+}
+
+.game_locations td {
+    text-align: left;
+}
+.game_info_header {
+    font-style: italic;
+}
+
+.game_info_notice {
+    text-decoration: underline;
+    font-style: italic;
+}
+/*
+=========
+  formatting for rules text
+=========
+*/
+.rules {
+    list-style-position: inside;
+}
+
+.registration_header {
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.no_border {
+    border-style: none;
+}
+
+/*
+.form_container {
+    position: static;
+}*/ 
+
+.stretch {
+    width: 100%;
+}
+
+.text_container {
+    margin-left: 25%;
+    padding-left: 1%;
+    padding-right: 10%;
+    text-indent: 20pt;
+    border-left-style: outset;
+}
+
+/*.flex_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}*/
+
+/*flex box that wraps smaller pieces of text into a single line, like radio button displays or actual text boxes*/ 
+.registration_text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+
+/*extends input box to fill remaining space*/ 
+.form_text_bar {
+    flex-grow: 1;
+    margin-left:10px;
+}
+
+/*header styling for the Registration Page*/
+.registration_mast {
+    width: 100%;
+}
+
+/* a slight modification to space dropdown boxes in the center, while also utilizing flex-wrap*/
+.registration_drop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*a slight modification to flex-wrap for checkboxes so that there isn't the additional padding or centered content*/ 
+.registration_check {
+    display: flex; 
+    flex-wrap: wrap;
+
+}
+
+.form_check {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.form_check_box {
+    flex-grow: 1;
+    align-self: center;
+    margin-left: 10px;
+}
+
+
+.own_uniform {
+    font-weight: bold;
+    padding-top: 2%;
+}
+
+.clothing_box {
+    height: 200px; 
+    width: 400px;
+}
+
+.clothing_size {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jersey_size {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.clothing_text {
+    display: flex; 
+    justify-content: left;
+    flex-grow: 1;
+    font-weight: bold;
+}
+
+/*a general rule to allow a more natural spacing between content*/ 
+form div label {
+    padding-top: .5%;
+}
+
+/*extends, while also spacing, dropdown bars*/
+.form_drop {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+
+.form_dropdown {
+    flex-grow: .5;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.form_box_width {
+    width: 32.5%;
+}
+/* Indents a single line list */
+.single_list {
+    list-style-type: square;
+}
+
+/* Indents a single list */
+
+.rules ul li {
+    list-style-position: inside;
+}
+
+/* Indents/styles a nested orderered-unordered list with alpha */
+ol ul li {
+    list-style-type: lower-alpha;
+}
+
+/* Indents/styles a nested unordered-unordered list as squares */
+ul li {
+    list-style-type: square;
+}
+
+/*Indents/styles a nested unordered-ordered list as numbers */
+ul ol li{
+    list-style-type: decimal;
+}
+
+/*Indents/styles a nested unordered-unordered-unordered list as circles */
+ul ul li {
+    list-style-type: circle;
+}
+
+
+/*bolds section-para text for unordered lists*/
+ul li p {
+    font-weight: 900;
+    display: inline;
+}
+/*maintains align of section-para text for ordered lists*/
+ol li p {
+    display: inline;
+}
+.bold {
+    font-weight: bold;
+}
+
+.not_bold {
+    font-weight: normal;
+}
+
+/* evenly spaces table boxes */
+
+table tr td {
+    width: 25%;
+    text-align: center;
+}
+
+.date_box {
+    background-color: white;
+}
+
+aside ul li {
+    list-style: none;
+    font-weight: 900;
+    width: 100%;
+    text-indent: 0%;
+}
+
+aside ul li p {
+    font-weight: 100;
+}
+
+/*styles the submit button for all forms to also act as a visual bookened*/ 
+form div button {
+    background-color: orangered;
+    border: none;
+    color: white;
+    opacity: .5;
+    padding: 15px 32px;
+    margin-top: 2%;
+    text-align: center;
+    text-decoration: none;    
+    font-size: 16px;
+    width: 100%;
+}
+
+/*an effect for the submit button on forms*/ 
+form div button:hover {
+    background-color: orangered;
+    opacity: 1;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*provides a special padding to the bottom of forms*/ 
+.closing_text {
+    padding-bottom: 4%;
+}
+
+/*keeps the results table from filling the entire page*/ 
+.results_table {
+    width: 75%;
+}
+
+/*special font size for the results page header*/ 
+.results_table_header {
+    font-size: 24;
+}
+
+/*
+=========
+  splash image sizing
+=========
+*/
+.splash {
+    height: 400px;
+    width: 65%;
+    margin-left: 25%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-style: double;
+    border-bottom-style: double;
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+    border-color: white;
+    background-image:url("../images/design3_image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}

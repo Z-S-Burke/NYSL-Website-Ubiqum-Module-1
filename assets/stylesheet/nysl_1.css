@@ -1,0 +1,86 @@
+/*
+=========
+Primary logo
+=========
+*/
+
+.logo {
+    position: absolute; 
+    left: 65%;
+    bottom: 20%;
+    height: 250px;
+    width: 250px;
+    z-index: 5;
+}
+
+header {
+    z-index: 1050;
+}
+
+.offset {
+    left: 65%;
+    position: absolute;
+    bottom: 20%;
+}
+
+.page_title {
+    text-align: center;
+    background-color: black;
+    height: 40px;
+    margin: 0px;
+    font-size: 40px;
+    color: white;
+}
+.title_text { 
+    text-transform: capitalize;
+    float: left;
+    color: white; 
+    font-size: 60px;
+    position: absolute;
+    top: 20px; 
+    margin-top: 1%;
+    margin-left: 1%;
+    z-index: 3;
+}
+header_bar {
+    height: 100px;
+    width: 100%;
+}
+
+/* Style the navigation menu */
+nav {
+    float: left; 
+    position: absolute;
+    bottom: 0%;
+    width: 15%; 
+    padding: 20px;
+    font-size: 30px;
+}
+
+nav ul a{
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.text_container {
+    margin-bottom: 20px;
+    margin-left: 220px;
+    margin-top: 50px;
+    position: relative;
+}
+
+
+p {
+    text-indent: 20pt; 
+}
+
+.splash {
+    position: relative;
+    height: 464px;
+    width: 100%; 
+    z-index: 1;
+    background-image:url("../images/design1_image1.jpeg");
+    background-repeat: no repeat;
+    background-size: cover;
+}
